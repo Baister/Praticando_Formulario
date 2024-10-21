@@ -25,7 +25,32 @@
         </fieldset>
 
         <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
 
+        <div> <!--Fazendo um radio botton que é um botão com várias escolhas-->
+            <label>De qual lado da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end <!--Isso que ela fez é o que ela quer que apareça na opção-->
+                <!--Esse checked significa que quando a página é carregada, ele já começa marcado-->
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end <!--Isso que ela fez é o que ela quer que apareça na opção-->
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack <!--Isso que ela fez é o que ela quer que apareça na opção-->
+            </label>
+        </div>
+
+        <div> <!--Essa vai servir para a senioridade, como aquela seleção de estado-->
+            <label>Senioridade</label>
+            <select id="senioridade"> <!--Select usa OPTION para ter aquelas seleções-->
+                <option selected disabled value="">Selecione</option> <!--Essa opção é para quando for selecionar, estar escrito que nada foi selecionado ainda-->
+                <option>Junior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
         </div>
 
     </form>
